@@ -6,7 +6,7 @@
 	<groupId>th.co.hcu</groupId>
 	<artifactId>hcu-training-ws</artifactId>
 	<version>0.1</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>hcu-training-ws</name>
 	<description>hcu training day</description>
