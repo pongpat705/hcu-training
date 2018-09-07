@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html class="no-js" data-ng-app="app">
+<head>
+<meta charset="ISO-8859-1">
+<title>Index Static file</title>
+</head>
+<body data-ng-controller="AppCtrl">
+	<script src="./bower_components/jquery/dist/jquery.js?vxvision=9"></script>
+	<script src="./bower_components/angular/angular.js?vxvision=9"></script>
+	
+	<h1>This is static file</h1>
+	
+	  <fieldset>
+	    <input type="text" name="title" ng-model="title" />
+	    <button ng-click="addTodo()">Add</button>
+	  </fieldset>
+	
+    <ul>
+    	<li ng-repeat="t in todos" >
+    		<p>{{t.title}}</p>
+    	</li>
+    </ul>
+	
+	
+	<script src="./scripts/app.js?vxvision=9"></script>
+	<script src="./scripts/app.main.js?vxvision=9"></script>
+</body>
+</html>

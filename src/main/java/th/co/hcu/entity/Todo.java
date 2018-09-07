@@ -1,7 +1,5 @@
 package th.co.hcu.entity;
 
-import java.util.Date;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,15 +8,17 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="todo")
-public class Todo {
+public class Todo extends BaseDomain{
 
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3910944767206213642L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long todoId;
 	private String title;
-	private Date createDate;
-	private String createBy;
 
 
 	public long getTodoId() {
@@ -37,20 +37,5 @@ public class Todo {
 		this.title = title;
 	}
 
-	public Date getCreateDate() {
-		return createDate;
-	}
-
-	public void setCreateDate(Date createDate) {
-		this.createDate = createDate;
-	}
-
-	public String getCreateBy() {
-		return createBy;
-	}
-
-	public void setCreateBy(String createBy) {
-		this.createBy = createBy;
-	}
 
 }

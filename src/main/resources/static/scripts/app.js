@@ -10,7 +10,7 @@
  */
 
 angular
-  .module('app', []).constant()
+  .module('app', ['ui.router','oc.lazyLoad', 'ngStorage']).constant()
   .run(['$http', '$rootScope', '$q',
         function($http, $rootScope, $q) {
 	  
